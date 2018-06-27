@@ -13,15 +13,21 @@
         <action name="Login" class="com.rcnjtech.action.LoginAction" method="execute">
             <interceptor-ref name="myinterceptor"/>
             <interceptor-ref name="timer"/>
+            <interceptor-ref name="basicStack"/>
             <interceptor-ref name="defaultStack"/>
-            <result name="success">/success.jsp</result>
-            <result name="login">/index.jsp</result>
+            <result name="success">/selectimage.jsp</result>
         </action>
         <action name="Image" class="com.rcnjtech.action.ShowImageAction" method="execute">
             <interceptor-ref name="params"/>
             <interceptor-ref name="timer"/>
             <interceptor-ref name="defaultStack"/>
             <result name="success">/image.jsp</result>
+        </action>
+        <action name="Upload" class="com.rcnjtech.action.UploadFile" method="execute">
+            <interceptor-ref name="params"/>
+            <interceptor-ref name="timer"/>
+            <interceptor-ref name="defaultStack"/>
+            <result name="success">/success.jsp</result>
         </action>
     </package>
 </struts>

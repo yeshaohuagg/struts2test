@@ -12,18 +12,6 @@
     <title>登录成功</title>
 </head>
 <body>
-<h1>登录成功!</h1>
-hello,<s:property value="username"/>
-<form action="Image.action" method="post">
-    <table>
-        <tr>
-            <td>图片网址：</td>
-            <td><input type="text" name="url"></td>
-        </tr>
-        <tr>
-            <td colspan="2" style="text-align: center"><input type="submit" value="查看图像"></td>
-        </tr>
-    </table>
-</form>
+<h1>成功!</h1>
 </body>
 </html>
