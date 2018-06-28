@@ -39,5 +39,13 @@
             <result name = "success">/success.jsp</result>
             <result name="error">/error.jsp</result>
         </action>
+        <action name="Emploee" class="com.rcnjtech.action.Emploee" method="execute">
+            <interceptor-ref name="defaultStack"/>
+            <interceptor-ref name="timer"/>
+            <interceptor-ref name="params"/>
+            <result name="success">/success.jsp</result>
+            <result name="error">/error.jsp</result>
+            <result name="input">/myaction.jsp</result>
+        </action>
     </package>
 </struts>
