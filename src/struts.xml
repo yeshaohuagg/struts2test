@@ -15,19 +15,29 @@
             <interceptor-ref name="timer"/>
             <interceptor-ref name="basicStack"/>
             <interceptor-ref name="defaultStack"/>
-            <result name="success">/selectimage.jsp</result>
+            <result name="success">/myaction.jsp</result>
+            <result name="error">/error.jsp</result>
         </action>
         <action name="Image" class="com.rcnjtech.action.ShowImageAction" method="execute">
             <interceptor-ref name="params"/>
             <interceptor-ref name="timer"/>
             <interceptor-ref name="defaultStack"/>
             <result name="success">/image.jsp</result>
+            <result name="error">/error.jsp</result>
         </action>
         <action name="Upload" class="com.rcnjtech.action.UploadFile" method="execute">
             <interceptor-ref name="params"/>
             <interceptor-ref name="timer"/>
             <interceptor-ref name="defaultStack"/>
             <result name="success">/success.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+        <action name="Emailer" class="com.rcnjtech.action.Emailer" method="execute">
+            <interceptor-ref name="defaultStack"/>
+            <interceptor-ref name="timer"/>
+            <interceptor-ref name="params"/>
+            <result name = "success">/success.jsp</result>
+            <result name="error">/error.jsp</result>
         </action>
     </package>
 </struts>

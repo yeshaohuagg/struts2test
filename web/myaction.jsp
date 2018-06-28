@@ -29,5 +29,19 @@ hello,<s:property value="username"/>
     <input type="file" name="myFile"/>
     <input type="submit" value="上传文件"/>
 </form>
+<em>Google's SMTP 将为你提供服务，请输入账户和密码</em>
+<form action="Emailer.action" method="post">
+    <label for="from">From</label><br/>
+    <input type="text" name="from"><br/>
+    <label for="password">Password</label><br/>
+    <input type="password" name="password"><br/>
+    <label for="to">To</label><br/>
+    <input type="text" name="to"><br/>
+    <label for="subject">Subject</label><br/>
+    <input type="text" name="subject"><br/>
+    <label for="body">Body</label><br/>
+    <input type="text" name="body"><br/>
+    <input type="submit" value="发送"><br/>
+</form>
 </body>
 </html>
