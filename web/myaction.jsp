@@ -52,5 +52,16 @@
         <s:textfield name="age" label="Age" size="20"/>
         <s:submit name="submit" label="Submit" align="center"/>
     </s:form>
+
+    <form action="Select.action">
+        <label for="name">请选择姓名</label>
+        <select name="name">
+            <option name="周韦彤">周韦彤</option>
+            <option name="周韦彤">周韦彤</option>
+            <option name="周韦彤">周韦彤</option>
+            <option name="美女">美女</option>
+        </select>
+        <input type="submit" value="选好了"/>
+    </form>
 </body>
 </html>

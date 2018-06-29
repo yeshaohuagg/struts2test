@@ -13,5 +13,11 @@
 </head>
 <body>
 <h1>成功!</h1>
+<s:if test="name == '周韦彤'">
+    你选择了周韦彤
+</s:if>
+<s:else>
+    美女
+</s:else>
 </body>
 </html>
